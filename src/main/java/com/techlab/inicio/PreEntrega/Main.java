@@ -113,7 +113,6 @@ public class Main {
             if (opcion != 1) {
                 seguirAgregando = false;
             }
-            entrada.nextLine();
         }
     }
 
@@ -193,7 +192,6 @@ public class Main {
                 }
             }
             System.out.println("No hay más productos para mostrar");
-            entrada.nextLine();
         }
     }
 
@@ -219,14 +217,12 @@ public class Main {
                 } else {
                     System.out.println("No se ha eliminado ningun producto");
                 }
-                entrada.nextLine();
             }
         }
 
         if (!encontrado){
             throw new RuntimeException("No se encontro ningun producto con el id: " + idAEliminar + ". Intente con otro ID");
         }
-        entrada.nextLine();
     }
 
 
